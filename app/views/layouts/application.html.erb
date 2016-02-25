@@ -7,16 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header>
-    <div class="header-left"><%= link_to "始める.com(仮)", root_path %></div>
-    <div class="header-right">検索</div>
-  </header>
+    <header class="bg-info">
+      <div class="header-left"><%= link_to "始める.com(仮)", root_path %></div>
+      <div class="header-right">検索</div>
+    </header>
+</div>
   
 <%= yield %>
 
-	<footer>
-	  Copyright © <%= link_to "始める.com(仮)", root_path %> All Rights Reserved.
-	</footer>
+  <div class="bg-info text-center">
+  	<footer>
+  	  Copyright © <%= link_to "始める.com(仮)", root_path %> All Rights Reserved.
+  	</footer>
+	</div>
 
 </body>
 </html>

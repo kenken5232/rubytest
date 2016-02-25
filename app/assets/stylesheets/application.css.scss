@@ -14,49 +14,50 @@
  *= require_self
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*
 body{
 	width: 900px;
 	margin: 0px auto;
 }
+*/
 
 header, nav, article, aside, section, footer{
 	display: block;
 }
 
-header, nav, article, aside, section, footer{
-	border: 1px solid #ccc;
-	margin: 5px 5px;
-	padding: 5px 5px;
+nav, article, aside, section{
+	border: 1px solid #ccc; 
+	margin: 5px 5px; 
+	padding: 5px 5px; 
 }
 
 header{
+	border-bottom: 1px solid #ccc;
     height: 60px;
-
-	/* 常にページ上部に固定
-	position: fixed;
-	z-index: 10;
-	*/
+    width: 100%;
+    padding: 5px;
 }
 
 .header-left{
 	float: left;
 	color: #ED7000;
 	font-size: 30px;
-
 }
 
 .header-right{
 	float: right;
 	color: #808080;
 	font-size: 20px;
-
 }
 
 .contents{
-/*	border: 1px solid #ccc;*/
 	overflow: auto;
 }
 
+/*
 .contents-left{
 	float: left;
 	width: 720px;
@@ -66,9 +67,14 @@ header{
 	float: left;
 	width: 180px;
 }
+*/
 
 footer{
+	border-top: 1px solid #ccc;
+	height: 30px;
+	width: 100%;
 	clear: both;
 	text-align: center;
 	font-size: 80%;
+	padding: 5px;
 }

@@ -1,14 +1,16 @@
-<div class="contents">
+<div class="container contents">
+	<div class="row">
 	<!-- メインコンテンツ(左)末尾 -->
-	<div class="contents-left">
+	<div class="col-sm-9 contents-left">
 		<section>
-		    <h2>指定サイト内で人気のエントリーを表示します</h2>
+		    <h2 class="bg-danger">メインコンテンツ</h2>
 		    <p>
 		        <input type="text" name="name" id="name">
-		        <input type="button" value="表示" id="button_result">
+		        <input type="button" value="表示" id="button_result" class="btn btn-primary">
+<!--		        <button class="btn btn-info">info</button>	-->
 		    </p>
 		    <p>
-    		    <div id="show"></div>
+    		    <div id="show"><%= @json %></div>
 		    </p>
 
             <!-- JavaScript先頭 -->
@@ -22,13 +24,52 @@
 
 		</section>
 		<section>
-			<h1>セクションに分ける要素</h1>
-				<p>〜本文省略〜</p>
+			<h2 class="bg-success">もんちょブログ</h2>
+				<h3>ここから始まります。</h3>
+				<p>
+					も　です。<br>
+					ブログつくりました。<br>
+					やったこととかメモしていけるように<br>
+					設定していきますネ。<br>
+				</p>
+				<h3>はじまったんですが</h3>
+				<p>
+					もーん<br>
+					<br>
+					仕事もはじまったんですが、いきなり飲み会で終電でした。。。<br>
+					<br>
+					時間づくりのためにイロイロ画策します。。<br>
+					<br>
+					さて、今日は２つです。<br>
+					<br>
+					１．毎日できることを考える<br>
+					通勤時間を曲（作曲目標の曲風に似ているもの）を聴きながら、<br>
+					作曲の基本に立ち返ってサイトから勉強していこうと思います。<br>
+					今日は下記サイト。<br>
+					<br>
+					コニーのDTM作曲講座<br>
+					http://dtm.55-52.com/<br>
+					<br>
+					２．作曲環境を整える<br>
+					以前持っていたソフト（シンガーソングライター、Reason）はWin7に非対応なので、<br>
+					取り急ぎ「Domino」というフリーソフトで代用します。<br>
+					<br>
+					上記サイトの中に紹介されていますが、<br>
+					最終的には「SONAR」ってソフトを買おうかと思ってます。<br>
+					<br>
+					まずはこのフリーソフトで小慣れるまで、、、<br>
+					<br>
+					<br>
+					なんかこんなの書いてると、<br>
+					いつぞやのCrimsonFlowの時が懐かしくなりました。。。<br>
+					<br>
+					明日は、数小節のメロディを作ってみます。<br>
+				</p>
 		</section>
 	</div>
 	<!-- メインコンテンツ(左)末尾 -->
 	<!-- サブコンテンツ(右)先頭 -->
-	<div class="contents-right">
+	<div class="col-sm-3 contents-right">
 		<section>
 			<h1>カテゴリー</h1>
 			<ul>
@@ -52,4 +93,5 @@
 		</section>
 	</div>
 	<!-- サブコンテンツ(右)末尾 -->
+	</div>
 </div>
